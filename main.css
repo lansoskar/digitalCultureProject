@@ -1,0 +1,78 @@
+/* https://www.geeksforgeeks.org/how-to-create-fade-in-effect-on-page-load-using-css/ */
+body {
+    background-color: #e0e0e0;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#main {
+    margin: auto;
+    display: flex;
+    max-width: 50%;
+    max-height: 20%;
+    flex-flow: column nowrap;
+    background-color: #ffbe31;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: auto;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 5.8vw;
+}
+
+.imgScientist {
+    display: flex;
+    margin-left: -2px;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.authors {
+    color: darkgrey;
+    font-size: 0.8vw;
+}
+
+.textBox {
+    display: block;
+    max-width: 50%;
+    font-size: 1.2vw;
+    margin: auto;
+    line-height: 1.7vw;
+    background-color: white;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.navBar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #e0e0e0;
+    color: #e0e0e0;
+}
+
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    color: #000000;
+}
+h2 {
+    margin: auto;
+    display: flex;
+    font-size: 2vw;
+}
